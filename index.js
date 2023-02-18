@@ -7,6 +7,12 @@ const app = express();
 
 const port = 3000;
 
+// add Access-Control-Allow-Origin header to all responses
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    next();
+});
+
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
