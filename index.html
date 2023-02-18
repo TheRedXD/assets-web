@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* import some monospace font from google fonts lol */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+        @keyframes appear {
+            0% {
+                opacity: 0;
+                transform: translateY(-60px) scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0px) scale(1);
+            }
+        }
+
+        * {
+            padding: 10px;
+            margin: 0px auto;
+        }
+
+        body {
+            background-color: #1e1d29;
+            color: #fff;
+            font-family: 'Roboto Mono', monospace;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .imageblock {
+            position: relative;
+            display:block;
+            padding:0px;
+            margin:auto;
+            margin-top:20px;
+            outline: 1px solid #3b3a4f;
+            background-color:#2d2c3d;
+            width:fit-content;
+            height:fit-content;
+            border-radius:20px;
+            animation-name: appear;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        .imageblock img {
+            width: 100%;
+            max-width: 80vw;
+            border-radius: 20px;
+            margin:auto;
+        }
+
+        .imageblock-source {
+            background-color: #4c4a64;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-radius: 0px 0px 20px 20px;
+            outline: 1px solid #615f80;
+            transition: all .2s ease-in-out;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .imageblock-source:hover {
+            background-color: #9790ff;
+            outline: 1px solid #ffffff;
+        }
+
+        .imageblock-source:active {
+            background-color: #2b2a38;
+            outline: 1px solid #9790ff;
+            transition: none;
+        }
+
+        .imageblock a {
+            color: #fff;
+            text-decoration: none;
+            padding:0px;
+        }
+    </style>
+    <title>assets</title>
+</head>
+<body>
+    <h2>Hello! Why are you here? This website only serves as an assets website for various content, like FontAwesome and etc. I mean, if you can figure out how to use it then use it lol</h2>
+    <div class="imageblock">
+        <img src="/assets/assets-web/amogus.gif"/>
+        <a target="_blank" href="https://www.reddit.com/r/AmongUs/comments/j5jsxa/i_made_a_spinning_red_frames_interpolated_with/"><div class="imageblock-source">Source</div></a>
+    </div>
+</body>
+</html>
